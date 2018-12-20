@@ -2,6 +2,7 @@
 #ifdef GAMEENGINE_H
 #include <vector>
 #include<SDL.h>
+#include "GameController.h"
 
 namespace spel {
 	class GameEngine

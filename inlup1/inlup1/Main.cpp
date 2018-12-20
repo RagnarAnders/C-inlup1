@@ -1,7 +1,9 @@
 #include "WinRenderer.h"
-
+#include "GameEngine.h"
+using namespace spel;
 int main(int argc, char ** argv) {
-	SDL_Delay(5000);
+	GameEngine engine;
+	engine.run();
 
 	return 0;
 }
