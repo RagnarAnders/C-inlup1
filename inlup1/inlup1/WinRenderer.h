@@ -8,12 +8,15 @@ namespace spel {
 	public:
 		WinRenderer();
 		~WinRenderer();
+		SDL_Renderer* getRen() const {
+			return ren;
+		}
 	private:
 		SDL_Window* win;
 		SDL_Renderer* ren;
 	};
 
-	WinRenderer extern win ;
+	extern WinRenderer winRen ;
 }
 
 

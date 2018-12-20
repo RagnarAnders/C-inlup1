@@ -17,6 +17,6 @@ namespace spel {
 		SDL_Quit();
 	}
 
-	WinRenderer win;
+	WinRenderer winRen;
 
 }
