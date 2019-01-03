@@ -1,8 +1,10 @@
 #include "GameEngine.h"
-#include "WinRenderer.h"
 
 namespace spel {
-
+	void GameEngine::add(Sprite * sp)
+	{
+		sprits.push_back(sp);
+	}
 	GameEngine::GameEngine()
 	{
 	}
@@ -14,13 +16,9 @@ namespace spel {
 		while (!quit) {
 
 			GameController controller;
-			controller.processInput();
+			controller.processInput(sprits);//vectorn ska skickas med i den här parametern
 			//Sprite.update();
 			winRen.render();
-
-			SDL_Delay(5000);
-
-			quit = true;
 		}
 	}
 

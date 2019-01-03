@@ -9,6 +9,7 @@ namespace spel {
 		WinRenderer();
 		~WinRenderer();
 		void render();
+		SDL_Renderer* getRen() const { return ren; }
 	private:
 		SDL_Window* win;
 		SDL_Renderer* ren;

@@ -1,17 +1,16 @@
 #define GAMEENGINE_H
 #ifdef GAMEENGINE_H
-#include <vector>
-#include<SDL.h>
 #include "GameController.h"
-
 namespace spel {
 	class GameEngine
 	{
 	public:
+		void add(Sprite* sp);
+		void run();
 		GameEngine();
 		~GameEngine();
-
-		void run();
+	protected:
+		std::vector<Sprite*> sprits;
 	};
 
 }
