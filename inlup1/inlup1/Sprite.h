@@ -3,7 +3,6 @@
 #include <string>
 #include <SDL_image.h>
 #include "WinRenderer.h"
-
 namespace spel {
 	class Sprite
 	{
