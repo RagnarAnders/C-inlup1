@@ -3,14 +3,13 @@
 
 namespace spel {
 	
-	Sprite::Sprite(std::string path)
+	Sprite::Sprite(std::string path, SDL_Renderer* ren)
 	{
-		makeTexture(path);
+		makeTexture(path, ren);
 	}
 
-	void Sprite::draw() const {
-		SDL_RenderCopy(winRen.getRen(), texture, NULL, &rekt
-);
+	void Sprite::draw(SDL_Renderer* ren) const {
+		SDL_RenderCopy(ren, texture, NULL, &rekt);
 	}
 
 	
@@ -21,22 +20,22 @@ namespace spel {
 	//	return new Sprite(r);
 	//}
 
-	Sprite * Sprite::getInstance(std::string path) {
+	Sprite * Sprite::getInstance(std::string path, SDL_Renderer* ren) {
 		//s.rekt = ;
-		return new Sprite(path);
+		return new Sprite(path, ren);
 	}
 
 	Sprite::~Sprite()
 	{
 	}
-	void Sprite::makeTexture(std::string path) //skapar texturen
+	void Sprite::makeTexture(std::string path, SDL_Renderer* ren) //skapar texturen
 	{
 		//SDL_Surface surface = IMG_Load(path.c_str());
 
 
 		textSurf = IMG_Load(path.c_str());
 		rekt = { 0,0,textSurf->w, textSurf->h };
-		texture = SDL_CreateTextureFromSurface(winRen.getRen(), textSurf);
+		texture = SDL_CreateTextureFromSurface(ren, textSurf);
 		SDL_FreeSurface(textSurf);
 	}
 }

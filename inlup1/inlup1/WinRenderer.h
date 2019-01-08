@@ -1,6 +1,7 @@
 #define WINRENDERER_H
 #ifdef WINRENDERER_H
-#include <SDL.h>
+#include <vector>
+#include "Player.h"
 
 namespace spel {
 	class WinRenderer
@@ -8,7 +9,7 @@ namespace spel {
 	public:
 		WinRenderer();
 		~WinRenderer();
-		void render();
+		void render(std::vector<Sprite*> sp);
 		SDL_Renderer* getRen() const { return ren; }
 	private:
 		SDL_Window* win;
