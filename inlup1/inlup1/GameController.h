@@ -1,14 +1,13 @@
 #define GAMECONTROLLER_H
 #ifdef GAMECONTROLLER_H
-#include <vector>
-#include "Sprite.h"
+#include "sprite.h"
 
 namespace spel {
 	class GameController
 	{
 	public:
 		~GameController();
-		void processInput(std::vector<Sprite*> sp);
+		void processInput(Sprite* s);
 	
 	};
 }

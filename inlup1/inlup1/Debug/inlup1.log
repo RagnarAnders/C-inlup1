@@ -1,2 +1,16 @@
-﻿  Main.cpp
-  inlup1.vcxproj -> D:\GitHub\C-inlup1\inlup1\Debug\inlup1.exe
+﻿  GameController.cpp
+  GameEngine.cpp
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C2039: 'vector': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\string(20): note: see declaration of 'std'
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C2143: syntax error: missing ';' before '<'
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C2238: unexpected token(s) preceding ';'
+d:\github\c-inlup1\inlup1\inlup1\gameengine.cpp(6): error C2065: 'sprits': undeclared identifier
+d:\github\c-inlup1\inlup1\inlup1\gameengine.cpp(19): error C2065: 'sprits': undeclared identifier
+  Main.cpp
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C2039: 'vector': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\string(20): note: see declaration of 'std'
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C2143: syntax error: missing ';' before '<'
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\github\c-inlup1\inlup1\inlup1\gameengine.h(13): error C2238: unexpected token(s) preceding ';'
+  Generating Code...

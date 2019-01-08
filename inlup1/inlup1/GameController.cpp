@@ -5,7 +5,7 @@ namespace spel {
 	GameController::~GameController()
 	{
 	}
-	void GameController::processInput(std::vector<Sprite*> sp)
+	void GameController::processInput(Sprite* s)
 	{
 		SDL_Event event;
 		while (SDL_PollEvent(&event)) {
@@ -25,10 +25,10 @@ namespace spel {
 			case SDL_KEYUP: break;
 			}//switch
 			SDL_RenderClear(winRen.getRen());
-			for (Sprite *s : sp) { // använd denna lista för att flytta ner fiender
+			
 				s->setRekt(moveX, moveY);
 				s->draw();
-			}
+		
 			SDL_RenderPresent(winRen.getRen());
 		}//while
 	}
