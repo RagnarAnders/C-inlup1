@@ -1,8 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-
-#pragma once
-#include "Sprite.h"
+#include "Enemy.h"
 namespace spel {
 	class Player : public Sprite
 	{

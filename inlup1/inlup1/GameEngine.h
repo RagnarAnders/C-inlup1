@@ -10,9 +10,12 @@ namespace spel {
 		void run();
 		GameEngine();
 		~GameEngine();
+		void setEnemyPath(std::string path);
+		std::string getEnemyPath() const;
 		void tick(unsigned long interval);
 	protected:
 	private:
+		std::string enemyPath;
 		std::vector<Sprite*> sprits;
 	};
 

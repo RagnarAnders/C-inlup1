@@ -25,6 +25,7 @@ namespace spel {
 		for (Sprite* s : sp) {
 			s->draw(getRen());
 		}
+		
 		SDL_RenderPresent(ren);
 	}
 

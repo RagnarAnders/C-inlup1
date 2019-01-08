@@ -1,6 +1,6 @@
 #define GAMECONTROLLER_H
 #ifdef GAMECONTROLLER_H
-#include "WinRenderer.h"
+#include "Spawn.h"
 
 namespace spel {
 	class GameController
