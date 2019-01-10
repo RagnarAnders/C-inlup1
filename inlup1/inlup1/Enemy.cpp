@@ -14,5 +14,6 @@ namespace spel {
 
 	Enemy::~Enemy()
 	{
+		
 	}
 }

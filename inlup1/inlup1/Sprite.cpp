@@ -12,13 +12,14 @@ namespace spel {
 		SDL_RenderCopy(ren, texture, NULL, &rekt);
 	}
 
-	
-
-
-	//Sprite * Sprite::getInstance(const SDL_Rect & r) //den här kanske vi inte ska ha alls, ifall vi ska ha underklasser
-	//{
-	//	return new Sprite(r);
-	//}
+	SDL_Rect Sprite::setRekt(int x, int y)
+	{
+		
+		rekt.x += x;
+		rekt.y += y;
+		return rekt; 
+		
+	}
 
 	Sprite * Sprite::getInstance(std::string path, SDL_Renderer* ren) {
 		//s.rekt = ;

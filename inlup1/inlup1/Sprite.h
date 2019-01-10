@@ -9,10 +9,7 @@ namespace spel {
 	class Sprite
 	{
 	public:
-		virtual SDL_Rect setRekt(int x, int y) { 
-			rekt.x += x;
-			rekt.y += y;
-			return rekt; }
+		virtual SDL_Rect setRekt(int x, int y);
 		static Sprite* getInstance(std::string path, SDL_Renderer* ren);
 		virtual ~Sprite();
 		virtual SDL_Rect getRekt() { return rekt; }

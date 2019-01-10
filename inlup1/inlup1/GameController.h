@@ -8,7 +8,7 @@ namespace spel {
 	public:
 		GameController();
 		~GameController();
-		bool processInput(std::vector<Sprite*> sp);
+		bool processInput(std::vector<Sprite*> *sp);
 	
 	};
 }
