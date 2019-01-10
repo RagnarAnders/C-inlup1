@@ -8,9 +8,6 @@ namespace spel {
 	public:
 		void add(Player* newplayer);
 		void run();
-		/*Player* getPlayer() {
-			return player;
-		}*/
 		GameEngine();
 		~GameEngine();
 		void setEnemyPath(std::string path);
@@ -22,6 +19,5 @@ namespace spel {
 		std::string enemyPath;
 		std::vector<Sprite*> sprits;
 	};
-
 }
 #endif // GAMEENGINE_H

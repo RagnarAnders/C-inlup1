@@ -11,6 +11,5 @@ namespace spel {
 	private:
 		Player(std::string path, SDL_Renderer* ren);
 	};
-
 }
 #endif // !PLAYER_H

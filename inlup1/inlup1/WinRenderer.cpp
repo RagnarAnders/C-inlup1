@@ -10,7 +10,6 @@ namespace spel {
 		SDL_SetRenderDrawColor(ren, 200, 0, 0, 255);
 	}
 
-
 	WinRenderer::~WinRenderer()
 	{
 		SDL_DestroyWindow(win);
@@ -19,8 +18,7 @@ namespace spel {
 	}
 
 	void WinRenderer::render(std::vector<Sprite*> sp, Player* p)
-	{
-		
+	{	
 		SDL_RenderClear(ren);
 		for (Sprite* s : sp) {
 			s->draw(getRen());
@@ -28,9 +26,5 @@ namespace spel {
 		p->draw(getRen());
 		SDL_RenderPresent(ren);
 	}
-
-	
-
 	WinRenderer winRen;
-
 }

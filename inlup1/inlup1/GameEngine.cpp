@@ -4,7 +4,6 @@
 namespace spel {
 	void GameEngine::add(Player* newplayer)
 	{
-		
 		player = newplayer;
 	}
 	GameEngine::GameEngine()
@@ -19,7 +18,6 @@ namespace spel {
 		bool quit = false;
 		while (!quit)
 		{
-			
 			unsigned long interval = 16;
 			quit = controller.processInput(player);//vectorn ska skickas med i den här parametern
 			if (count == 0 || count == 300 || count == 600) {
@@ -29,9 +27,9 @@ namespace spel {
 			spawn.update(&sprits);
 			winRen.render(sprits, player);
 			tick(interval);
+			spawn.collision(&sprits, player);
 			if (count == 900)
 				count = 0;
-			
 		}
 	}
 
@@ -43,8 +41,6 @@ namespace spel {
 	{
 		enemyPath = path;
 	}
-
-	
 
 	std::string GameEngine::getEnemyPath() const
 	{
@@ -61,5 +57,4 @@ namespace spel {
 			//Väntar bara
 		}
 	}
-	
 }

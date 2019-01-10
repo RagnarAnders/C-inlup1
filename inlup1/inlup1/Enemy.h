@@ -6,8 +6,7 @@
 namespace spel {
 	class Enemy : public Sprite
 	{
-	public:
-		
+	public:	
 		~Enemy();
 		static Enemy* getInstance(std::string path, SDL_Renderer* ren);
 		void makeTexture(std::string path, SDL_Renderer* ren);

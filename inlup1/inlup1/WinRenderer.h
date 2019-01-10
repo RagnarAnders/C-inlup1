@@ -16,9 +16,6 @@ namespace spel {
 		SDL_Renderer* ren;
 	};
 
-
 	extern WinRenderer winRen ;
 }
-
-
 #endif // WINRENDERER_H

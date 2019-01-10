@@ -9,7 +9,6 @@ namespace spel {
 		GameController();
 		~GameController();
 		bool processInput(Player *p);
-	
 	};
 }
 #endif GAMECONTROLLER_H

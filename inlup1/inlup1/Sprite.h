@@ -19,8 +19,7 @@ namespace spel {
 		SDL_Surface* textSurf;
 		SDL_Rect rekt;
 		SDL_Texture* texture;
-	private:
-		
+	private:		
 		Sprite(const Sprite&) = delete;
 		const Sprite& operator=(const Sprite&) = delete;
 	};
