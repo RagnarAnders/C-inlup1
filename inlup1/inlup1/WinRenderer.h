@@ -9,7 +9,7 @@ namespace spel {
 	public:
 		WinRenderer();
 		~WinRenderer();
-		void render(std::vector<Sprite*> sp);
+		void render(std::vector<Sprite*> sp, Player* p);
 		SDL_Renderer* getRen() const { return ren; }
 	private:
 		SDL_Window* win;

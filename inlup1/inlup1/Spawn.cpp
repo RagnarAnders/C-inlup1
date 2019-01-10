@@ -13,8 +13,7 @@ namespace spel {
 	{
 		int moveX = 0;
 		int moveY = 0;
-		moveX++;
-		
+		moveX--;
 		for (Sprite *s : *sp) { // använd denna lista för att flytta ner fiender
 			if (Enemy* e = dynamic_cast<Enemy*>(s)) {
 				e->setRekt(moveX, moveY);
@@ -27,7 +26,7 @@ namespace spel {
 	{
 
 		sp->erase(std::remove_if(sp->begin(), sp->end(),
-			[]( Sprite* s) { return s->getRekt().x > 300; }), sp->end());
+			[]( Sprite* s) { return s->getRekt().x < 0; }), sp->end());
 
 		//std::vector<Sprite*> del;
 		//for (Sprite *e : *sp) {

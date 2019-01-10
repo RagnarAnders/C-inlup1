@@ -18,14 +18,14 @@ namespace spel {
 		SDL_Quit();
 	}
 
-	void WinRenderer::render(std::vector<Sprite*> sp)
+	void WinRenderer::render(std::vector<Sprite*> sp, Player* p)
 	{
 		
 		SDL_RenderClear(ren);
 		for (Sprite* s : sp) {
 			s->draw(getRen());
 		}
-		
+		p->draw(getRen());
 		SDL_RenderPresent(ren);
 	}
 

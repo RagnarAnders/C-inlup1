@@ -2,8 +2,9 @@
 
 
 namespace spel {
-	Player::Player(std::string path, SDL_Renderer* ren):Sprite(path, ren)
+	Player::Player(std::string path, SDL_Renderer* ren)
 	{
+		makeTexture(path, ren);
 	}
 
 
@@ -14,5 +15,15 @@ namespace spel {
 
 	Player::~Player()
 	{
+	}
+	void Player::makeTexture(std::string path, SDL_Renderer* ren) //skapar texturen
+	{
+		//SDL_Surface surface = IMG_Load(path.c_str());
+
+
+		textSurf = IMG_Load(path.c_str());
+		rekt = { 0,0,textSurf->w, textSurf->h };
+		texture = SDL_CreateTextureFromSurface(ren, textSurf);
+		SDL_FreeSurface(textSurf);
 	}
 }

@@ -2,9 +2,10 @@
 #define FPS 60
 
 namespace spel {
-	void GameEngine::add(Sprite * sp)
+	void GameEngine::add(Player* newplayer)
 	{
-		sprits.push_back(sp);
+		
+		player = newplayer;
 	}
 	GameEngine::GameEngine()
 	{
@@ -20,13 +21,13 @@ namespace spel {
 		{
 			
 			unsigned long interval = 16;
-			quit = controller.processInput(&sprits);//vectorn ska skickas med i den här parametern
+			quit = controller.processInput(player);//vectorn ska skickas med i den här parametern
 			if (count == 0 || count == 300 || count == 600) {
 				spawn.create(&sprits, getEnemyPath());
 			}
 			count++;
 			spawn.update(&sprits);
-			winRen.render(sprits);
+			winRen.render(sprits, player);
 			tick(interval);
 			if (count == 900)
 				count = 0;

@@ -7,6 +7,7 @@ namespace spel {
 	public:
 		static Player* getInstance(std::string path, SDL_Renderer* ren);
 		~Player();
+		void makeTexture(std::string path, SDL_Renderer* ren);
 	private:
 		Player(std::string path, SDL_Renderer* ren);
 	};

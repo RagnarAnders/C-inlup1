@@ -1,2 +1,10 @@
-﻿  Spawn.cpp
+﻿  Enemy.cpp
+  GameController.cpp
+  GameEngine.cpp
+  Main.cpp
+  Player.cpp
+  Spawn.cpp
+  Sprite.cpp
+  WinRenderer.cpp
+  Generating Code...
   inlup1.vcxproj -> D:\GitHub\C-inlup1\inlup1\Debug\inlup1.exe

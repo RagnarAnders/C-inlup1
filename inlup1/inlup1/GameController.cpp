@@ -8,7 +8,7 @@ namespace spel {
 	GameController::~GameController()
 	{
 	}
-	bool GameController::processInput(std::vector<Sprite*> *sp)
+	bool GameController::processInput(Player *p)
 	{
 		SDL_Event event;
 		while (SDL_PollEvent(&event)) {
@@ -26,11 +26,8 @@ namespace spel {
 				} break; //innre switch
 			case SDL_KEYUP: break;
 			}//yttre switch
-			for (Sprite *s : *sp) { // använd denna lista för att flytta ner fiender
-				if(Player* p = dynamic_cast<Player*>(s))
-				p->setRekt(moveX, moveY);
-				//s->draw(); flyttas till renderer
-			}
+			
+			p->setRekt(moveX, moveY);
 			SDL_RenderPresent(winRen.getRen());
 		}//while
 		return false;

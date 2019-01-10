@@ -10,6 +10,7 @@ namespace spel {
 		
 		~Enemy();
 		static Enemy* getInstance(std::string path, SDL_Renderer* ren);
+		void makeTexture(std::string path, SDL_Renderer* ren);
 	private:
 		Enemy(std::string path, SDL_Renderer* ren);
 	};

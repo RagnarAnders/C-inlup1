@@ -10,17 +10,17 @@ namespace spel {
 	{
 	public:
 		virtual SDL_Rect setRekt(int x, int y);
-		static Sprite* getInstance(std::string path, SDL_Renderer* ren);
 		virtual ~Sprite();
 		virtual SDL_Rect getRekt() { return rekt; }
-		virtual void makeTexture(std::string path, SDL_Renderer* ren);
+		virtual void makeTexture(std::string path, SDL_Renderer* ren) = 0;
 		virtual void draw(SDL_Renderer* ren) const;
 	protected:
-		Sprite(std::string path, SDL_Renderer* ren);
-	private:
+		Sprite();
 		SDL_Surface* textSurf;
 		SDL_Rect rekt;
 		SDL_Texture* texture;
+	private:
+		
 		Sprite(const Sprite&) = delete;
 		const Sprite& operator=(const Sprite&) = delete;
 	};

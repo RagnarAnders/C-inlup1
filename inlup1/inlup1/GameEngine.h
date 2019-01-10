@@ -6,8 +6,11 @@ namespace spel {
 	class GameEngine
 	{
 	public:
-		void add(Sprite* sp);
+		void add(Player* newplayer);
 		void run();
+		/*Player* getPlayer() {
+			return player;
+		}*/
 		GameEngine();
 		~GameEngine();
 		void setEnemyPath(std::string path);
@@ -15,6 +18,7 @@ namespace spel {
 		void tick(unsigned long interval);
 	protected:
 	private:
+		Player *player;
 		std::string enemyPath;
 		std::vector<Sprite*> sprits;
 	};
