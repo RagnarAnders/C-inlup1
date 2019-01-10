@@ -37,24 +37,19 @@ namespace spel {
 			bottomE = (*sp)[c]->getRekt().y + (*sp)[c]->getRekt().h;
 
 			if (bottomP <= topE) {
-				std::cout << "false" << std::endl;
 				return false;		
 			}
 			if (topP >= bottomE) {
-				std::cout << "false" << std::endl;
 				return false;
 			}
 			if (rightP <= leftE) {
-				std::cout << "false" << std::endl;
 				return false;
 			}
 			if (leftP >= rightE) {
-				std::cout << "false" << std::endl;
 				return false;
 
 			}
 			sp->erase(sp->begin() + c);
-			std::cout << "true" << std::endl;
 			return true;
 		}
 	}
