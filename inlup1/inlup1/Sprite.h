@@ -9,8 +9,8 @@ namespace spel {
 	class Sprite
 	{
 	public:
-		virtual SDL_Rect setRekt(int x, int y);
 		virtual ~Sprite();
+		virtual SDL_Rect setRekt(int x, int y);
 		virtual SDL_Rect getRekt() { return rekt; }
 		virtual void makeTexture(std::string path, SDL_Renderer* ren) = 0;
 		virtual void draw(SDL_Renderer* ren) const;

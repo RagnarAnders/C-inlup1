@@ -25,7 +25,7 @@ namespace spel {
 			}
 			count++;
 			spawn.update(&sprits);
-			winRen.render(sprits, player);
+			winRen.render(sprits, player); //varför är sprite inte en pekare här?
 			tick(interval);
 			spawn.collision(&sprits, player);
 			if (count == 900)
@@ -49,12 +49,12 @@ namespace spel {
 		return std::string(enemyPath);
 	}
 
-	void GameEngine::tick(unsigned long interval)
+	void GameEngine::tick(unsigned long interval) 
 	{
 		auto timer = SDL_GetTicks();
 		//DWORD startTime = GetTickCount();
 
-		while (SDL_GetTicks() < (timer + interval))
+		while (SDL_GetTicks() < (timer + interval)) // den här metoden används inte?
 		{
 			//Väntar bara
 		}

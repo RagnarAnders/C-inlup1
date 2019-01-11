@@ -9,6 +9,9 @@ namespace spel {
 		GameController();
 		~GameController();
 		bool processInput(Player *p);
+		void setSpeed(int newSpeed);
+	private:
+		int speed = 10;
 	};
 }
 #endif GAMECONTROLLER_H
