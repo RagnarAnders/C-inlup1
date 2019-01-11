@@ -61,7 +61,11 @@ namespace spel {
 		//DWORD startTime = GetTickCount();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		while (SDL_GetTicks() < (timer + interval)) // den här metoden används inte? den här metoden skapar vår fps
+=======
+		while (SDL_GetTicks() < (timer + interval))
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
 =======
 		while (SDL_GetTicks() < (timer + interval))
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
