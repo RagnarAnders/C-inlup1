@@ -5,7 +5,6 @@ namespace spel {
 	class Player : public Sprite
 	{
 	public:
-
 		static Player* getInstance(std::string path, SDL_Renderer* ren);
 		~Player();
 		void makeTexture(std::string path, SDL_Renderer* ren);

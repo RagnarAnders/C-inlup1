@@ -4,6 +4,7 @@ int main(int argc, char ** argv) {
 	int speed;
 	std::string spelarSprite, npcSprite;
 	GameEngine engine;
+<<<<<<< HEAD
 	
 	std::cout << "Skriv in spelar objektets spritelokation " << std::endl;
 	std::cin >> spelarSprite;
@@ -22,6 +23,11 @@ int main(int argc, char ** argv) {
 	std::cout << "Skriv in npc Objektets sprit" << std::endl;
 	std::cin >> npcSprite;
 	engine.setEnemyPath("c:/images/gubbe.bmp");//måste ha en cin med sprite istället för vår sprite och vi borde även lägga in en rektstorlek
+=======
+	engine.add(Player::getInstance("c:/images/Spider-Man.png", winRen.getRen()));
+
+	engine.setEnemyPath("c:/images/gubbe.bmp");
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
 	engine.run();
 
 	return 0;

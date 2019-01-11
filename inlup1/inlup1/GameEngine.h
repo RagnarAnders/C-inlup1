@@ -7,18 +7,22 @@ namespace spel {
 	{
 	public:
 		void add(Player* newplayer);
-		void run(); //loop som kör de olika del-looparna
+		void run();
 		GameEngine();
 		~GameEngine();
 		void setEnemyPath(std::string path);
 		std::string getEnemyPath() const;
 		void tick(unsigned long interval);
+<<<<<<< HEAD
 		void setPSpeed(int x) {
 			playerSpeed = x;
 		}
 		void setESpeed(int x) {
 			enemySpeed = x;
 		}
+=======
+	protected:
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
 	private:
 		int playerSpeed = 0, enemySpeed = 0;
 		Player *player;
