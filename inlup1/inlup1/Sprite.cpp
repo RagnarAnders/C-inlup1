@@ -20,7 +20,5 @@ namespace spel {
 
 	Sprite::~Sprite()
 	{
-		SDL_DestroyTexture(texture);
-		delete &rekt;
 	}
 }

@@ -13,8 +13,6 @@ namespace spel {
 
 	Enemy::~Enemy()
 	{	
-		
-
 	}
 
 	void Enemy::makeTexture(std::string path, SDL_Renderer* ren) //skapar texturen

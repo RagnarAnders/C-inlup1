@@ -41,8 +41,6 @@ namespace spel {
 
 	GameEngine::~GameEngine()
 	{
-		delete player;
-		sprits.clear();
 	}
 
 	void GameEngine::setEnemyPath(std::string path)
