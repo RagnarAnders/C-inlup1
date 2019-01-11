@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿  inlup1.vcxproj -> D:\GitHub\C-inlup1\inlup1\Debug\inlup1.exe
 =======
+=======
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
 =======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
 ﻿  Spawn.cpp
@@ -9,6 +12,9 @@ d:\github\c-inlup1\inlup1\inlup1\spawn.cpp(33): warning C4018: '<': signed/unsig
 d:\github\c-inlup1\inlup1\inlup1\spawn.cpp(55): warning C4715: 'spel::Spawn::collision': not all control paths return a value
   inlup1.vcxproj -> D:\GitHub\C-inlup1\inlup1\Debug\inlup1.exe
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
+=======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
 =======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion

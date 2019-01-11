@@ -13,6 +13,9 @@ namespace spel {
 =======
 		bool processInput(Player *p);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
+=======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
 =======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion

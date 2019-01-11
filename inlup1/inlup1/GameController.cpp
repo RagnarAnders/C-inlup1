@@ -10,6 +10,7 @@ namespace spel {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	bool GameController::processInput(Player *p, int speed)
 	{
@@ -20,12 +21,17 @@ namespace spel {
 =======
 =======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
+=======
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
 	bool GameController::processInput(Player *p)
 	{
 		SDL_Event event;
 		while (SDL_PollEvent(&event)) {
 			int moveX =0, moveY= 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
+=======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
 =======
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
@@ -35,11 +41,15 @@ namespace spel {
 				switch (event.key.keysym.sym) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				case SDLK_UP: moveY = -speed; // här måste vi lägga in att spelaren inte kan gå utanför kanterna
 				break;
 				case SDLK_DOWN: moveY = speed;
 				break;
 				case SDLK_RIGHT: moveX = speed;
+=======
+				case SDLK_UP: moveY = -1;
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
 =======
 				case SDLK_UP: moveY = -1;
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion

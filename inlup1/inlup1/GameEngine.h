@@ -15,12 +15,16 @@ namespace spel {
 		void tick(unsigned long interval);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		void setPSpeed(int x) {
 			playerSpeed = x;
 		}
 		void setESpeed(int x) {
 			enemySpeed = x;
 		}
+=======
+	protected:
+>>>>>>> parent of 5719012... Kommentarer och Speed funktion
 =======
 	protected:
 >>>>>>> parent of 5719012... Kommentarer och Speed funktion
