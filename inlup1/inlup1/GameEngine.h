@@ -11,13 +11,19 @@ namespace spel {
 		GameEngine();
 		~GameEngine();
 		void setEnemyPath(std::string path);
-		std::string getEnemyPath() const; // varför är den const?
+		std::string getEnemyPath() const;
 		void tick(unsigned long interval);
-	protected: // vi har ingen protteced så den bordes ta bort
+		void setPSpeed(int x) {
+			playerSpeed = x;
+		}
+		void setESpeed(int x) {
+			enemySpeed = x;
+		}
 	private:
+		int playerSpeed = 0, enemySpeed = 0;
 		Player *player;
 		std::string enemyPath;
-		std::vector<Sprite*> sprits; //här skapas listan för första gången?
+		std::vector<Sprite*> sprits;
 	};
 }
 #endif // GAMEENGINE_H

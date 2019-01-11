@@ -5,25 +5,21 @@ namespace spel {
 	{
 	}
 
-	void GameController::setSpeed(int newSpeed) {
-		newSpeed = speed;
-	}
-
 	GameController::~GameController()
 	{
 	}
 
-	bool GameController::processInput(Player *p)
+	bool GameController::processInput(Player *p, int speed)
 	{
 		SDL_Event event;
 		while (SDL_PollEvent(&event)) {
-			int moveX =0, moveY= 0;
+			int moveX = speed, moveY= speed;
 			
 			switch (event.type) {
 			case SDL_QUIT: return true; break;
 			case SDL_KEYDOWN:
 				switch (event.key.keysym.sym) {
-				case SDLK_UP: moveY = -speed;
+				case SDLK_UP: moveY = -speed; // här måste vi lägga in att spelaren inte kan gå utanför kanterna
 				break;
 				case SDLK_DOWN: moveY = speed;
 				break;

@@ -6,11 +6,10 @@ namespace spel {
 		Enemy *e = Enemy::getInstance(path, winRen.getRen());
 		sp->push_back(e);	
 	}
-	void Spawn::update(std::vector<Sprite*> *sp)
+	void Spawn::update(std::vector<Sprite*> *sp, int x)
 	{
-		int moveX = 0;
+		int moveX = x;
 		int moveY = 0;
-		moveX--;
 		for (Sprite *s : *sp) { // använd denna lista för att flytta ner fiender
 			if (Enemy* e = dynamic_cast<Enemy*>(s)) {
 				e->setRekt(moveX, moveY);

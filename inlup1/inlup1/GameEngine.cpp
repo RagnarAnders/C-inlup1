@@ -19,15 +19,15 @@ namespace spel {
 		while (!quit)
 		{
 			unsigned long interval = 16;
-			quit = controller.processInput(player);//vectorn ska skickas med i den här parametern
+			quit = controller.processInput(player, playerSpeed);
 			if (count == 0 || count == 300 || count == 600) {
 				spawn.create(&sprits, getEnemyPath());
 			}
 			count++;
-			spawn.update(&sprits);
-			winRen.render(sprits, player); //varför är sprite inte en pekare här?
-			tick(interval);
+			spawn.update(&sprits, enemySpeed);
 			spawn.collision(&sprits, player);
+			winRen.render(sprits, player);
+			tick(interval);
 			if (count == 900)
 				count = 0;
 		}
@@ -54,7 +54,7 @@ namespace spel {
 		auto timer = SDL_GetTicks();
 		//DWORD startTime = GetTickCount();
 
-		while (SDL_GetTicks() < (timer + interval)) // den här metoden används inte?
+		while (SDL_GetTicks() < (timer + interval)) // den här metoden används inte? den här metoden skapar vår fps
 		{
 			//Väntar bara
 		}

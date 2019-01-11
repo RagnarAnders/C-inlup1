@@ -7,7 +7,7 @@ namespace spel {
 	{
 	public:
 		void create(std::vector<Sprite*> *sp, std::string path);
-		void update(std::vector<Sprite*> *sp);
+		void update(std::vector<Sprite*> *sp, int x);
 		bool collision(std::vector<Sprite*> *sp, Player *p);
 		void del(std::vector<Sprite*> *sp);
 		Spawn();
